@@ -1,0 +1,91 @@
+Setup Project
+===================
+	
+	CI : Continous Integration 
+		-git  **
+		-svn 
+		-TFS
+	CD : Continous Deployement
+		-jenkins **
+		-Bamboo 
+ 
+
+CI:
+=========
+Objective:
+	1. Code/project/content/data sharing 
+	2. Version control 
+		
+
+		
+VCS	: version control source				/GIT
+	git download and install 
+	
+DVCS	: distributed version control source			/GITHUB
+	https://github.com/
+	
+
+	
+Git Life Cycle
+=====================
+Local files,folder,source code,Project
+
+1.	
+	$git init		: create local repository 
+	$git status		: show the files,folder details
+	
+
+2. 
+	$git add -A 		: add all files to stage area
+				: track the files 
+
+	or 
+	$git add filename.ext file.ext
+
+
+	-unstage /remove from stage area 
+	$git rm --chache filename.ext
+
+	
+3.	commit / save to local repository 
+	
+	$git commit -m "my first release -1"	
+		
+
+
+C:\Users\vkumar15\eclipse\JunitProject
+
+Step 1 : open git bash 
+Step 2: 
+	cd "C:\Users\vkumar15\eclipse\JunitProject"
+	
+Step 3:
+	git init
+
+Step 4:
+	git add -A
+
+Step 5:
+	git commit -m "comments..."
+
+Step 6: push to server/remote/cloud
+
+	git remote add <abc> https://github.com/vimleshtech/myci-cd.git
+		
+	git push -u <abc> master
+		     to   from 
+
+
+Step 7:
+	git clone https://github.com/vimleshtech/myci-cd.git
+	
+
+
+CD : Continous Deployement
+========================================
+Jenkins
+	
+	http://localhost:8080
+	
+	
+
