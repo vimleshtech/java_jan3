@@ -1,0 +1,116 @@
+Class
+Object
+Ecanpsulation
+Abstraction/Data Hiding
+Constructor				**
+
+Access Specifier
+	-private
+	-protected
+	-public
+	-default
+Access Modifier 
+	-final
+	-this
+	-super
+----------------------------
+
+Today's Topics
+====================
+Inheritence		: To extend one class features to another class 
+			: extends is inbuilt keyword which extend one class features to another class
+			Example:
+				A (super class) -> B (child classs)
+		
+			There are following types in java:
+			i. Single Level
+				A -> B
+			ii. Multi Level
+				A -> B -> C .....
+			iii. Tree/Hirarchical
+				A -> B , C, D -> M,N....
+			iv. Hybrid (any two or more than two from above)
+				A -> B ->C ...
+				X -> Y, Z 
+			v. Multiple (java doesn't support multiple inheritence using class, 
+				howevere this can achieved using interface)
+			
+		
+Polymorphisam		: Poly means many and morphisam means forms
+			: Multiple function/method will have same name but different works
+			There are following types of polymorphisam:
+			i. Overloading: multiple function/mehtod will have same name but different argument(types of argument or numberof argument )
+				-overloading doesn't dpendes on return type 
+				Example:
+					void add(int a, int b){}
+					void add(int a, int b, int c){}
+					void add(double a, double b){}
+					void add(duble a, int b){}
+		
+			ii. Overriding 	: multiple function/method will have same name and same argument i.e. overriding
+				Example:
+				class A
+				{
+					void welcome(){
+
+						//hi 
+					}
+
+				}	
+
+				class B extends A{
+					void welcome(){
+
+						//hello 
+					}
+
+
+
+				}
+
+				//create object and invoke to function 
+				A o = new A();
+				o.welcome(); //hi
+				
+				B o1 =new B();
+				o.welcome();//hello
+
+				//overriding
+				o =o1;
+				o.welcome(); //hello
+
+
+				//or
+				A oo =new B();
+				oo.welcome(); //hello 
+			
+Abstract Class			: is incomplete class which can hold abstract and non-abstract methods
+				-abstract method cannot be implemented in same class (abstract class)
+				-non-abstract method must be implemented in same class
+				-instance cannot be created of abstract class
+
+				Example:
+				abstract class test{
+					
+
+				void add(int a, int b){ ..};
+				abstract void sub(int a, int b);
+
+				
+
+
+
+				}
+Interface		:   is fully abstract calss, all method will be abstract by default 
+		
+			Example:
+			interface Ia{
+
+				void add(int, int);
+				int sub(int a, int b);
+
+			}	
+
+
+			Note: multiple interface can be implemented in a class 
+						
