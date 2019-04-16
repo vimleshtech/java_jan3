@@ -1,0 +1,102 @@
+Why Java for Selenium 
+================================
+-> Java is object oriented programing langauge(we can develop reusable component)
+-> Java is plateform independent(works on all operating system)
+-> Java is open source (partially)
+
+Practical usage of arrays in Selenium 
+===============================================
+Array
+ArrayList
+List
+	Data can be read and stored in above types of class and we can process/pass 
+
+selenium webdriver (finder)
+
+
+String names[] = {"nitin@gmail.com","divya@gmail.com","raman@gmail.com"};
+
+
+WebDriver driver = new ChromeDriver();
+for(String u : names){
+
+	driver.get("https://www.gmail.com");
+	driver.findElement(By.id("email")).sendKeys(u);
+}
+
+
+
+Usage of Objects in Selenium
+=============================================
+
+class HomePage{
+	static WebDriver driver = null;
+
+	void open_url(){
+
+		driver = new FirefoxDriver();
+		driver.get("url..");
+	}	
+	void login(String uname, String pwd){
+
+	}
+
+	void logout(){
+
+	}
+
+}
+
+class AboutUS{
+
+
+
+}
+
+class Search{
+
+
+
+}
+
+
+
+class startup{
+
+
+	public static void main(String[] args]{
+
+		HomePage o = new HomePage();
+		Search s = new Search();
+
+		o.open_url();
+		o.login("abd@gmail.com","test1");
+		s.productSearch("iphone");
+		o.logout();
+
+	}
+}
+
+
+FRAMEWORK : is standard approach to develop or implement the project
+=======================================================================
+-> Framework provideres pre-defined template/structure and library(APIs)
+
+Junit : is framework which we can use for unit testing 
+
+There are two types of classes:
+	-Junit Test Class/Case
+	-Junit TestSuite 		: collections of JunitTest Classes 
+	
+
+There are following annotation in Junit:
+	@BeforeClass		: 1		-execute one time
+	@AfterClass			: 5	-execute one time
+	@Before			: 2		-before every @Test
+	@After				: 4	-after every @Test	
+	@Test 			: 3		-can be multiple 
+	
+
+
+
+
